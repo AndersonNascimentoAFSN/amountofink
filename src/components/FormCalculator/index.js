@@ -1,6 +1,5 @@
 import React from 'react';
 import WallAreas from '../WallAreas';
-import DoorsOrWindows from '../DoorsOrWindows';
 
 const FormCalculator = () => {
   const handleSubmit = () => {
@@ -9,7 +8,6 @@ const FormCalculator = () => {
   return (
     <form onSubmit={ handleSubmit }>
       <WallAreas />
-      <DoorsOrWindows />
       <button type="submit">Calcular</button>
     </form>
   );
