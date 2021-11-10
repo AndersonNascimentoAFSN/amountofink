@@ -1,0 +1,6 @@
+.c-subtitle {
+  color: var(--contrast);
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
