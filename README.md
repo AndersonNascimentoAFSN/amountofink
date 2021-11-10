@@ -17,7 +17,7 @@
 <br>
 
 ## 🚀 Veja o projeto online
-  - [AmountOfInk](https://trychat-socket.herokuapp.com/)
+  - [AmountOfInk](https://amountofink.vercel.app/)
 
 ## 🧪 Tecnologias
 
