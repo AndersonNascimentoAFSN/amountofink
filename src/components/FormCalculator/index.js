@@ -32,7 +32,6 @@ const FormCalculator = () => {
       setAreaTotal(areaWallTotal);
       setQtyOfInk(qtyOfInkPrintWall);
       setTinsOfInk(businessRules.sizeTinCalc(qtyOfInkPrintWall));
-      console.log(businessRules.sizeTinCalc(qtyOfInkPrintWall));
     }
     setValidation(validations);
   };
