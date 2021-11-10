@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import './styles.css';
 import WallAreas from '../WallAreas';
 import Result from '../Result';
 import * as businessRules from '../../utils/businessRules';
+import Button from './Button';
+import ValidationMessage from './ValidationMessage';
 
 const FormCalculator = () => {
   const globalState = useSelector((state) => state);
@@ -10,7 +13,7 @@ const FormCalculator = () => {
   const [areaTotal, setAreaTotal] = useState();
   const [qtyOfInk, setQtyOfInk] = useState();
   const [tinsOfInk, setTinsOfInk] = useState();
-  const [validation, setValidation] = useState();
+  const [validationMessage, setValidationMessage] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,13 +35,15 @@ const FormCalculator = () => {
       setAreaTotal(areaWallTotal);
       setQtyOfInk(qtyOfInkPrintWall);
       setTinsOfInk(businessRules.sizeTinCalc(qtyOfInkPrintWall));
+      setValidationMessage(false);
+    } else {
+      setValidationMessage(validations);
     }
-    setValidation(validations);
   };
 
   return (
     <>
-      <form onSubmit={ handleSubmit }>
+      <form onSubmit={ handleSubmit } className="c-calculator__form">
         {calculatorReducer.rooms.map((item, index) => (
           <WallAreas
             key={ `${item[index]}_${index}` }
@@ -46,10 +51,13 @@ const FormCalculator = () => {
             roomIndex={ index }
           />
         ))}
-        <button type="submit">Calcular</button>
+        <Button />
       </form>
       <Result areaTotal={ areaTotal } qtyOfInk={ qtyOfInk } tinsOfInk={ tinsOfInk } />
-      {validation !== true ? <span>{validation}</span> : ''}
+      {
+        validationMessage
+          && <ValidationMessage validationMessage={ validationMessage } />
+      }
     </>
   );
 };
