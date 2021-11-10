@@ -19,36 +19,56 @@ const WallArea = ({ dimensions, roomIndex, roomName }) => {
   }, [dispatch, dimensionsState, roomIndex, roomName]);
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Altura(m)"
-        name="height"
-        onChange={ handleWallArea }
-        value={ dimensionsState.height }
-      />
-      <input
-        type="text"
-        placeholder="Largura(m)"
-        name="width"
-        onChange={ handleWallArea }
-        value={ dimensionsState.width }
-      />
-      <input
-        type="text"
-        placeholder="quantidade de portas"
-        name="qtyDoor"
-        onChange={ handleWallArea }
-        value={ dimensionsState.qtyDoor }
-      />
-      <input
-        type="text"
-        placeholder="quantidade de janelas"
-        name="qtyWindow"
-        onChange={ handleWallArea }
-        value={ dimensionsState.qtyWindow }
-      />
-    </div>
+    <fieldset>
+      { roomName }
+      <label htmlFor={ `${roomName}_height` }>
+        Altura (m):
+        <input
+          id={ `${roomName}_height` }
+          type="number"
+          placeholder="Altura(m)"
+          name="height"
+          onChange={ handleWallArea }
+          value={ dimensionsState.height }
+        />
+      </label>
+
+      <label htmlFor={ `${roomName}_width` }>
+        Largura (m):
+        <input
+          id={ `${roomName}_width` }
+          type="number"
+          placeholder="Largura(m)"
+          name="width"
+          onChange={ handleWallArea }
+          value={ dimensionsState.width }
+        />
+      </label>
+
+      <label htmlFor={ `${roomName}_qtyDoor` }>
+        Quantidade de portas:
+        <input
+          id={ `${roomName}_qtyDoor` }
+          type="number"
+          placeholder="quantidade de portas"
+          name="qtyDoor"
+          onChange={ handleWallArea }
+          value={ dimensionsState.qtyDoor }
+        />
+      </label>
+
+      <label htmlFor={ `${roomName}qtyWindow` }>
+        Quantidade de janelas:
+        <input
+          id={ `${roomName}qtyWindow` }
+          type="number"
+          placeholder="quantidade de janelas"
+          name="qtyWindow"
+          onChange={ handleWallArea }
+          value={ dimensionsState.qtyWindow }
+        />
+      </label>
+    </fieldset>
   );
 };
 
@@ -56,10 +76,10 @@ export default WallArea;
 
 WallArea.propTypes = {
   dimensions: PropTypes.shape({
-    height: PropTypes.number,
-    width: PropTypes.number,
-    qtyDoor: PropTypes.number,
-    qtyWindow: PropTypes.number,
+    height: PropTypes.string,
+    width: PropTypes.string,
+    qtyDoor: PropTypes.string,
+    qtyWindow: PropTypes.string,
   }).isRequired,
   roomName: PropTypes.string.isRequired,
   roomIndex: PropTypes.number.isRequired,
