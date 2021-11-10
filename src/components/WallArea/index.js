@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 import { useDispatch } from 'react-redux';
 import { saveWallArea } from '../../actions/saveWallArea';
 
@@ -19,8 +20,8 @@ const WallArea = ({ dimensions, roomIndex, roomName }) => {
   }, [dispatch, dimensionsState, roomIndex, roomName]);
 
   return (
-    <fieldset>
-      { roomName }
+    <fieldset className="c-wall">
+      { roomName.replace('wall', 'Parede ') }
       <label htmlFor={ `${roomName}_height` }>
         Altura (m):
         <input

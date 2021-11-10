@@ -1,18 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SubTitle from '../SubTitle';
 import WallArea from '../WallArea';
 
 const WallAreas = ({ walls, roomIndex }) => (
-  <div>
-    <SubTitle
-      subtitle="Informe as dimensões de cada
-      parede da sala"
-    />
-    <p>
-      Informe também, caso possua, a quantidade de portas
-      e janelas de cada uma das paredes.
-    </p>
+  <>
     {
       Object.keys(walls).map((key, index) => (
         <WallArea
@@ -23,7 +14,7 @@ const WallAreas = ({ walls, roomIndex }) => (
         />
       ))
     }
-  </div>
+  </>
 );
 
 WallAreas.propTypes = {

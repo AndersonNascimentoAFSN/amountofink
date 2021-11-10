@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 const SubTitle = ({ subtitle }) => (
-  <h2>
+  <h2 className="c-subtitle">
     { subtitle }
   </h2>
 );

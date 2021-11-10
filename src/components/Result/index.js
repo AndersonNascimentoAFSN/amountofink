@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 import Title from '../Title';
+import TinsQtySizes from './TinsQtySizes';
 
 const Result = ({ areaTotal, qtyOfInk, tinsOfInk }) => (
-  <div>
+  <div className="c-result">
     <Title title="Resultado" />
-    <p>
+    <p className="result__paragraph">
       Área total a ser pintada:
       <span>
         { areaTotal }
@@ -13,7 +15,7 @@ const Result = ({ areaTotal, qtyOfInk, tinsOfInk }) => (
         m²
       </span>
     </p>
-    <p>
+    <p className="result__paragraph">
       Quantidade de tinta necessária:
       <span>
         { qtyOfInk }
@@ -21,25 +23,16 @@ const Result = ({ areaTotal, qtyOfInk, tinsOfInk }) => (
         litro(s)
       </span>
     </p>
-    <p>
+    <p className="result__paragraph">
       Tamanhos de latas de tintas que deves comprar:
     </p>
     {
       tinsOfInk && Object.keys(tinsOfInk).map((key, index) => (
-        <div key={ `${key}_${index}` }>
-          <p>
-            <span>Tamanho da lata:</span>
-            <span>
-              { key }
-              {' '}
-              L
-            </span>
-          </p>
-          <p>
-            <span>Quantidade de latas:</span>
-            <span>{ tinsOfInk[key] }</span>
-          </p>
-        </div>
+        <TinsQtySizes
+          key={ `${key}_${index}` }
+          keyProps={ key }
+          tinsOfInk={ tinsOfInk }
+        />
       ))
     }
   </div>
