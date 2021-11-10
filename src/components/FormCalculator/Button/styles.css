@@ -1,0 +1,10 @@
+.calculator__form__button {
+  background: var(--complementary);
+  border: none;
+  border-radius: 4px;
+  color: var(--contrast);
+  cursor: pointer;
+  margin-top: 5px;
+  max-width: 200px;
+  padding: 5px;
+}
