@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+<!-- <p align="center">
+  <img alt="AmountOfInk" src="./public/img/TryChat-Logo-white.png" width="160px">
+</p> -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=AmountOfInk&message=01&color=8257E5&labelColor=000000" alt="AmountOfInk 01" />
+  
+  <img src="https://img.shields.io/github/stars/AndersonNascimentoAFSN/amountofink?label=stars&message=MIT&color=8257E5&labelColor=000000" alt="Stars">
 
-## Available Scripts
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000" alt="License">   
+</p>
 
-In the project directory, you can run:
+<!-- <h1 align="center">
+    <img alt="AmountOfInk" src="./public/img/AmountOfInk-project.png" />
+</h1> -->
 
-### `yarn start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Veja o projeto online
+  - [AmountOfInk](https://trychat-socket.herokuapp.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧪 Tecnologias
 
-### `yarn test`
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://pt-br.reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
+- [Eslint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
 
-### `yarn build`
+## 🚀 Como executar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone o projeto e acesse a pasta do mesmo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+$ git clone git@github.com:AndersonNascimentoAFSN/amountofink.git
+$ cd amountofink
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciá-lo, siga os passos abaixo:
+```bash
+# Instalar as dependências
+$ npm install
 
-### `yarn eject`
+# Iniciar o projeto
+$ npm start
+```
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💻 Projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Amount Of Ink é um aplicativo ótimo para calcular a quantidade de tinta necessária para pintar uma sala. Além disso é exibido quantas latas são necessárias e seus respectivos tamanhos.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔖 Layout
 
-## Learn More
+Você pode visualizar o layout do projeto através do link abaixo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Layout Web](https://www.figma.com/file/B1ZSBSulQ770V3ECwSxmJ5/AmountOfInk?node-id=0%3A1)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
-### Code Splitting
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com 💜 by Anderson Nascimento 👋🏻 [Entre em contato caso queira trocar uma ideia](https://www.linkedin.com/in/andersonnascimentoafsn/).
