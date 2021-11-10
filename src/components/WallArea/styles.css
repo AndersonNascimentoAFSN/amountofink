@@ -1,0 +1,14 @@
+.c-wall {
+  border: none;
+  display: grid;
+  gap: 4px;
+  padding: 5px;
+}
+
+.c-wall input {
+  max-width: 100%;
+}
+
+.c-wall label {
+  max-width: 100%;
+}
