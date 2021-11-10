@@ -26,7 +26,7 @@ const TinsQtySizes = ({ keyProps, tinsOfInk }) => (
 export default TinsQtySizes;
 
 TinsQtySizes.propTypes = {
-  keyProps: PropTypes.number.isRequired,
+  keyProps: PropTypes.string.isRequired,
   tinsOfInk: PropTypes.shape({
     18: PropTypes.number,
     3.6: PropTypes.number,
