@@ -1,6 +1,6 @@
 const SAVE_WALL_AREA = 'SAVE_WALL_AREA';
-const saveWallArea = (wallArea) => (
-  { type: SAVE_WALL_AREA, wallArea }
+const saveWallArea = (data) => (
+  { type: SAVE_WALL_AREA, data }
 );
 
 export {
