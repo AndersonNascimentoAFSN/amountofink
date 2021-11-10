@@ -2,10 +2,10 @@ import { SAVE_WALL_AREA } from '../actions/saveWallArea';
 
 const INITIAL_STATE = {
   rooms: [
-    { wall1: { height: 0, width: 0, qtyDoor: 0, qtyWindow: 0 },
-      wall2: { height: 0, width: 0, qtyDoor: 0, qtyWindow: 0 },
-      wall3: { height: 0, width: 0, qtyDoor: 0, qtyWindow: 0 },
-      wall4: { height: 0, width: 0, qtyDoor: 0, qtyWindow: 0 },
+    { wall1: { height: '0', width: '0', qtyDoor: '0', qtyWindow: '0' },
+      wall2: { height: '0', width: '0', qtyDoor: '0', qtyWindow: '0' },
+      wall3: { height: '0', width: '0', qtyDoor: '0', qtyWindow: '0' },
+      wall4: { height: '0', width: '0', qtyDoor: '0', qtyWindow: '0' },
     },
   ],
 };
