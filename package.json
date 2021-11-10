@@ -47,6 +47,7 @@
     "@babel/helper-compilation-targets": "^7.16.0",
     "eslint-config-trybe-frontend": "^1.2.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^27.3.1",
     "stylelint": "^14.0.1",
     "stylelint-order": "^5.0.0"
   }
