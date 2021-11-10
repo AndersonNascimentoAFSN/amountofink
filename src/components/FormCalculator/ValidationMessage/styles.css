@@ -1,0 +1,5 @@
+.c-validationMessage {
+  border: 2px dotted var(--spotlight);
+  color: var(--complementary);
+  padding: 2px;
+}
